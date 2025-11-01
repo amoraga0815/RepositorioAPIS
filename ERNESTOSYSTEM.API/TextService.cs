@@ -16,7 +16,7 @@ namespace ERNESTOSYSTEM.API
         {
             // Devuelve los nombres de los días en español (es-ES)
             var es = CultureInfo.GetCultureInfo("es-ES");
-            return es.DateTimeFormat.DayNames;
+            return es.DateTimeFormat.DayNames.Select(d => d.ToUpper(es));
         }
     }
 }

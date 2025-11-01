@@ -14,8 +14,9 @@ namespace ERNESTOSYSTEM.API
 
         public static IEnumerable<string> GetWeekDays()
         {
-            // Devuelve los nombres de los días según la cultura actual del servidor
-            return CultureInfo.CurrentCulture.DateTimeFormat.DayNames;
+            // Devuelve los nombres de los días en español (es-ES)
+            var es = CultureInfo.GetCultureInfo("es-ES");
+            return es.DateTimeFormat.DayNames;
         }
     }
 }

@@ -7,7 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="FastEndpoints" Version="7.1.0" />
+    <PackageReference Include="MediatR" Version="13.1.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ERNESTOSYSTEM.Application\ERNESTOSYSTEM.Application.csproj" />
+    <ProjectReference Include="..\ERNESTOSYSTEM.Infrastructure\ERNESTOSYSTEM.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
